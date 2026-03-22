@@ -1,0 +1,246 @@
+/* ── Reset ───────────────────────────────────────────── */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ── Body ────────────────────────────────────────────── */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f4f8;
+  color: #333333;
+}
+
+/* ── Navigation Bar ──────────────────────────────────── */
+nav {
+  background-color: #1a3c5e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+
+nav .name {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li a {
+  color: #cce0f5;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+nav ul li a:hover {
+  color: white;
+}
+
+/* ── Container ───────────────────────────────────────── */
+.container {
+  max-width: 850px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* ── Header Section ──────────────────────────────────── */
+#header {
+  background-color: #1a3c5e;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+#header h1 {
+  font-size: 36px;
+  margin-bottom: 8px;
+}
+
+#header p {
+  font-size: 15px;
+  color: #cce0f5;
+  margin-bottom: 5px;
+}
+
+#header .badge {
+  display: inline-block;
+  background-color: #e07b45;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 5px 16px;
+  border-radius: 20px;
+  margin-top: 12px;
+}
+
+/* ── Section Headings ────────────────────────────────── */
+h2 {
+  font-size: 18px;
+  color: #1a3c5e;
+  border-bottom: 2px solid #1a3c5e;
+  padding-bottom: 6px;
+  margin-bottom: 18px;
+}
+
+/* ── Card ────────────────────────────────────────────── */
+.card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 25px;
+  margin-bottom: 25px;
+  border: 1px solid #dde3ea;
+}
+
+/* ── Objective ───────────────────────────────────────── */
+#objective p {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #555555;
+}
+
+/* ── Education Rows ──────────────────────────────────── */
+.edu-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+.edu-row:last-child {
+  border-bottom: none;
+}
+
+.edu-row .school {
+  font-weight: 600;
+  color: #1a3c5e;
+}
+
+.edu-row .year {
+  color: #e07b45;
+  font-weight: 600;
+}
+
+/* ── Project Card ────────────────────────────────────── */
+.project-card {
+  background-color: #f7faff;
+  border: 1px solid #b5cfe8;
+  border-radius: 8px;
+  padding: 18px 20px;
+  margin-bottom: 15px;
+}
+
+.project-card h3 {
+  font-size: 15px;
+  color: #1a3c5e;
+  margin-bottom: 6px;
+}
+
+.project-card p {
+  font-size: 13px;
+  color: #555555;
+  line-height: 1.7;
+}
+
+.project-tag {
+  display: inline-block;
+  background-color: #e8f0f8;
+  color: #1a3c5e;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 10px;
+  margin-top: 8px;
+  margin-right: 5px;
+  border: 1px solid #b5cfe8;
+}
+
+/* ── Achievements ────────────────────────────────────── */
+#achievements ul {
+  list-style: none;
+  padding: 0;
+}
+
+#achievements ul li {
+  font-size: 14px;
+  color: #555555;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  line-height: 1.6;
+}
+
+#achievements ul li:last-child {
+  border-bottom: none;
+}
+
+#achievements ul li .dot {
+  width: 8px;
+  height: 8px;
+  background-color: #e07b45;
+  border-radius: 50%;
+  margin-top: 6px;
+  flex-shrink: 0;
+}
+
+/* ── Skills ──────────────────────────────────────────── */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill {
+  background-color: #e8f0f8;
+  color: #1a3c5e;
+  padding: 7px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  border: 1px solid #b5cfe8;
+}
+
+/* ── Coursework ──────────────────────────────────────── */
+#coursework ul {
+  list-style: disc;
+  padding-left: 20px;
+  font-size: 14px;
+  color: #555555;
+  line-height: 2;
+}
+
+/* ── Contact ─────────────────────────────────────────── */
+#contact p {
+  font-size: 14px;
+  color: #555555;
+  margin-bottom: 8px;
+}
+
+#contact a {
+  color: #1a3c5e;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* ── Footer ──────────────────────────────────────────── */
+footer {
+  text-align: center;
+  font-size: 13px;
+  color: #888888;
+  padding: 20px;
+  margin-top: 10px;
+}
