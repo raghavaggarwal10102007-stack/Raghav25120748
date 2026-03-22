@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raghav Aggarwal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+
+    /* resetting default browser styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* body styling */
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f0f4f8;
+      color: #333333;
+    }
+
+    /* navigation bar */
+    nav {
+      background-color: #1a3c5e;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+    }
+
+    nav .name {
+      color: white;
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      color: #cce0f5;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    nav ul li a:hover {
+      color: white;
+    }
+
+    /* main content area */
+    .container {
+      max-width: 850px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    /* header / intro section */
+    #header {
+      background-color: #1a3c5e;
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+    }
+
+    #header h1 {
+      font-size: 36px;
+      margin-bottom: 8px;
+    }
+
+    #header p {
+      font-size: 15px;
+      color: #cce0f5;
+      margin-bottom: 5px;
+    }
+
+    /* badge for Head Boy */
+    #header .badge {
+      display: inline-block;
+      background-color: #e07b45;
+      color: white;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 5px 16px;
+      border-radius: 20px;
+      margin-top: 12px;
+    }
+
+    /* section headings */
+    h2 {
+      font-size: 18px;
+      color: #1a3c5e;
+      border-bottom: 2px solid #1a3c5e;
+      padding-bottom: 6px;
+      margin-bottom: 18px;
+    }
+
+    /* card style used for each section */
+    .card {
+      background-color: white;
+      border-radius: 8px;
+      padding: 25px;
+      margin-bottom: 25px;
+      border: 1px solid #dde3ea;
+    }
+
+    /* objective text */
+    #objective p {
+      font-size: 14px;
+      line-height: 1.8;
+      color: #555555;
+    }
+
+    /* education rows */
+    .edu-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-bottom: 1px solid #eee;
+      font-size: 14px;
+    }
+
+    .edu-row:last-child {
+      border-bottom: none;
+    }
+
+    .edu-row .school {
+      font-weight: 600;
+      color: #1a3c5e;
+    }
+
+    .edu-row .year {
+      color: #e07b45;
+      font-weight: 600;
+    }
+
+    /* project card */
+    .project-card {
+      background-color: #f7faff;
+      border: 1px solid #b5cfe8;
+      border-radius: 8px;
+      padding: 18px 20px;
+      margin-bottom: 15px;
+    }
+
+    .project-card h3 {
+      font-size: 15px;
+      color: #1a3c5e;
+      margin-bottom: 6px;
+    }
+
+    .project-card p {
+      font-size: 13px;
+      color: #555555;
+      line-height: 1.7;
+    }
+
+    .project-tag {
+      display: inline-block;
+      background-color: #e8f0f8;
+      color: #1a3c5e;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 10px;
+      margin-top: 8px;
+      margin-right: 5px;
+      border: 1px solid #b5cfe8;
+    }
+
+    /* achievements list */
+    #achievements ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    #achievements ul li {
+      font-size: 14px;
+      color: #555555;
+      padding: 10px 0;
+      border-bottom: 1px solid #eee;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      line-height: 1.6;
+    }
+
+    #achievements ul li:last-child {
+      border-bottom: none;
+    }
+
+    #achievements ul li .dot {
+      width: 8px;
+      height: 8px;
+      background-color: #e07b45;
+      border-radius: 50%;
+      margin-top: 6px;
+      flex-shrink: 0;
+    }
+
+    /* skills list */
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .skill {
+      background-color: #e8f0f8;
+      color: #1a3c5e;
+      padding: 7px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 600;
+      border: 1px solid #b5cfe8;
+    }
+
+    /* coursework list */
+    #coursework ul {
+      list-style: disc;
+      padding-left: 20px;
+      font-size: 14px;
+      color: #555555;
+      line-height: 2;
+    }
+
+    /* contact info */
+    #contact p {
+      font-size: 14px;
+      color: #555555;
+      margin-bottom: 8px;
+    }
+
+    #contact a {
+      color: #1a3c5e;
+      text-decoration: none;
+    }
+
+    #contact a:hover {
+      text-decoration: underline;
+    }
+
+    /* footer */
+    footer {
+      text-align: center;
+      font-size: 13px;
+      color: #888888;
+      padding: 20px;
+      margin-top: 10px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <span class="name">Raghav Aggarwal</span>
+    <ul>
+      <li><a href="#objective">Objective</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+
+    <!-- Header -->
+    <div id="header">
+      <h1>Raghav Aggarwal</h1>
+      <p>BBA — Digital Business &amp; Entrepreneurship</p>
+      <p>IIM Bangalore &nbsp;|&nbsp; Batch of 2028</p>
+      <p>raghavagg25@iimb.ac.in</p>
+      <span class="badge">Head Boy — School</span>
+    </div>
+
+    <!-- Objective -->
+    <div class="card" id="objective">
+      <h2>Career Objective</h2>
+      <p>
+        I am a first-year BBA student at IIM Bangalore studying Digital Business and Entrepreneurship.
+        I want to learn as much as possible about business, finance, and how technology is changing
+        the way businesses work. I am interested in working at the intersection of AI and business,
+        and I am looking for internships and projects where I can apply what I am studying in class.
+      </p>
+    </div>
+
+    <!-- Education -->
+    <div class="card" id="education">
+      <h2>Education</h2>
+      <div class="edu-row">
+        <div>
+          <span class="school">IIM Bangalore</span><br>
+          BBA — Digital Business &amp; Entrepreneurship
+        </div>
+        <span class="year">2025 – 2028</span>
+      </div>
+      <div class="edu-row">
+        <div>
+          <span class="school">Senior Secondary (Class XII)</span><br>
+          Commerce Stream
+        </div>
+        <span class="year">2025</span>
+      </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="card" id="projects">
+      <h2>Projects</h2>
+
+      <div class="project-card">
+        <h3>AI-Based Stitching Software</h3>
+        <p>
+          Currently working on an AI-based stitching software that helps automate the process
+          of taking measurements and suggesting stitch patterns. The idea came from seeing how
+          small tailoring businesses struggle with consistency and efficiency. The goal is to
+          make the tool simple enough for anyone to use without technical knowledge.
+        </p>
+        <span class="project-tag">Artificial Intelligence</span>
+        <span class="project-tag">Entrepreneurship</span>
+        <span class="project-tag">In Progress</span>
+      </div>
+
+    </div>
+
+    <!-- Achievements -->
+    <div class="card" id="achievements">
+      <h2>Achievements &amp; Leadership</h2>
+      <ul>
+        <li>
+          <span class="dot"></span>
+          <span><strong>Head Boy</strong> — Elected as Head Boy of my school, responsible for representing the student body, organising school events, and maintaining discipline and communication between students and teachers.</span>
+        </li>
+        <li>
+          <span class="dot"></span>
+          <span>Admitted to <strong>IIM Bangalore's BBA programme</strong> — one of the most competitive undergraduate business programmes in India.</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Coursework -->
+    <div class="card" id="coursework">
+      <h2>Relevant Coursework</h2>
+      <ul>
+        <li>Financial Accounting</li>
+        <li>Principles of Management</li>
+        <li>Business Communication</li>
+        <li>Microeconomics</li>
+        <li>Digital Business Fundamentals</li>
+        <li>Entrepreneurship and Innovation</li>
+      </ul>
+    </div>
+
+    <!-- Skills -->
+    <div class="card" id="skills">
+      <h2>Skills</h2>
+      <div class="skills-list">
+        <span class="skill">Tally ERP</span>
+        <span class="skill">Accounting</span>
+        <span class="skill">Bookkeeping</span>
+        <span class="skill">MS Excel</span>
+        <span class="skill">MS PowerPoint</span>
+        <span class="skill">Leadership</span>
+        <span class="skill">Communication</span>
+        <span class="skill">Teamwork</span>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="card" id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:raghavagg25@iimb.ac.in">raghavagg25@iimb.ac.in</a></p>
+      <p>College: Indian Institute of Management Bangalore</p>
+      <p>Location: Bangalore, India</p>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>Made by Raghav Aggarwal &nbsp;|&nbsp; BBA DBE &nbsp;|&nbsp; IIM Bangalore &nbsp;|&nbsp; 2025</p>
+  </footer>
+
+</body>
+</html>
